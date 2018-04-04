@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Click to see screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank"href=Tue_Apr_03_16_37_50_EDT_2018.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank"href=Tue_Apr_03_16_37_50_EDT_2018.jpg)img src=Tue_Apr_03_16_37_50_EDT_2018.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Login Successfully not executed]]>
+    </line>
+    <line>
+      <![CDATA[Click to see screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank"href=Tue_Apr_03_16_37_54_EDT_2018.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank"href=Tue_Apr_03_16_37_54_EDT_2018.jpg)img src=Tue_Apr_03_16_37_54_EDT_2018.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Login Successfully not executed]]>
+    </line>
+  </reporter-output>
+  <suite name="PME" duration-ms="6956" started-at="2018-04-03T20:37:47Z" finished-at="2018-04-03T20:37:54Z">
+    <groups>
+    </groups>
+    <test name=" PME Delete Data Test" duration-ms="2834" started-at="2018-04-03T20:37:47Z" finished-at="2018-04-03T20:37:50Z">
+      <class name="Testcases.LoginTest">
+        <test-method status="PASS" signature="loginasPMEAdmin(java.lang.String, java.lang.String)[pri:0, instance:Testcases.LoginTest@198b6731]" name="loginasPMEAdmin" duration-ms="1895" started-at="2018-04-03T16:37:47Z" data-provider="getData" finished-at="2018-04-03T16:37:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pmeadmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PMEAdmin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank"href=Tue_Apr_03_16_37_50_EDT_2018.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank"href=Tue_Apr_03_16_37_50_EDT_2018.jpg)img src=Tue_Apr_03_16_37_50_EDT_2018.jpg height=200 width=200></img></a>]]>
+            </line>
+            <line>
+              <![CDATA[Login Successfully not executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginasPMEAdmin -->
+      </class> <!-- Testcases.LoginTest -->
+    </test> <!--  PME Delete Data Test -->
+    <test name=" TestConfiguration Test" duration-ms="4095" started-at="2018-04-03T20:37:50Z" finished-at="2018-04-03T20:37:54Z">
+      <class name="Testcases.SecurityServiceGroupTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Testcases.SecurityServiceGroupTest@279fedbd]" name="setUp" is-config="true" duration-ms="6643" started-at="2018-04-03T16:37:41Z" finished-at="2018-04-03T16:37:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="serviceGroup()[pri:0, instance:Testcases.SecurityServiceGroupTest@279fedbd]" name="serviceGroup" duration-ms="3658" started-at="2018-04-03T16:37:50Z" finished-at="2018-04-03T16:37:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank"href=Tue_Apr_03_16_37_54_EDT_2018.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank"href=Tue_Apr_03_16_37_54_EDT_2018.jpg)img src=Tue_Apr_03_16_37_54_EDT_2018.jpg height=200 width=200></img></a>]]>
+            </line>
+            <line>
+              <![CDATA[Login Successfully not executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- serviceGroup -->
+      </class> <!-- Testcases.SecurityServiceGroupTest -->
+    </test> <!--  TestConfiguration Test -->
+  </suite> <!-- PME -->
+</testng-results>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PME]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="Listeners.CustomListeners"/>
+  </listeners>
+  <test name=" TestConfiguration Test(failed)">
+    <classes>
+      <class name="Testcases.ConfigurationTest">
+        <methods>
+          <include name="emailconfiguration"/>
+          <include name="singlesignon"/>
+          <include name="branding"/>
+          <include name="bulkProvisioningConfig"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Testcases.ConfigurationTest -->
+    </classes>
+  </test> <!--  TestConfiguration Test(failed) -->
+  <test name=" TestLdap Test(failed)">
+    <classes>
+      <class name="Testcases.LdapTest">
+        <methods>
+          <include name="ldaptest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Testcases.LdapTest -->
+    </classes>
+  </test> <!--  TestLdap Test(failed) -->
+  <test name=" TestFtp Test(failed)">
+    <classes>
+      <class name="Testcases.FtpTest">
+        <methods>
+          <include name="addFtp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Testcases.FtpTest -->
+    </classes>
+  </test> <!--  TestFtp Test(failed) -->
+  <test name=" Application Server Test(failed)">
+    <classes>
+      <class name="Testcases.ApplicationServerTest">
+        <methods>
+          <include name="webExConnections"/>
+          <include name="ciscoMeetingServer"/>
+          <include name="unityConnections"/>
+          <include name="ucce"/>
+          <include name="setUp"/>
+          <include name="spark"/>
+          <include name="cucm"/>
+          <include name="uccx"/>
+        </methods>
+      </class> <!-- Testcases.ApplicationServerTest -->
+    </classes>
+  </test> <!--  Application Server Test(failed) -->
+</suite> <!-- Failed suite [PME] -->
