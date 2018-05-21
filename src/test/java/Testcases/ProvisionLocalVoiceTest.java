@@ -77,8 +77,8 @@ public class ProvisionLocalVoiceTest extends TestBase {
 
 		click("localtemplatedata");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath(OR.getProperty("ldapdatainput"))).sendKeys("NFL", Keys.ENTER);
-		Thread.sleep(1000);
+		driver.findElement(By.xpath(OR.getProperty("ldapdatainput"))).sendKeys("NFL Test", Keys.ENTER);
+		Thread.sleep(2000);
 		click("ldapfirstoptionuser");
 		Thread.sleep(8000);
 

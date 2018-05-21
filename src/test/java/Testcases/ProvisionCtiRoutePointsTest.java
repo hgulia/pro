@@ -31,7 +31,7 @@ public class ProvisionCtiRoutePointsTest extends TestBase {
 	}
 
 	@Test(priority = 2, dataProvider = "getData")
-	public void provisionCtiRoute(String huntpilot, String huntlistname, String linegroupname, String cucm,String cuc)
+	public void provisionCtiRoute(String huntpilot, String huntlistname, String linegroupname, String cucm, String cuc)
 			throws InterruptedException, IOException {
 
 		String dirNumber;
@@ -62,7 +62,7 @@ public class ProvisionCtiRoutePointsTest extends TestBase {
 		action.click().sendKeys(Keys.ENTER);
 		action.build().perform();
 
-		Thread.sleep(2000);
+		Thread.sleep(8000);
 
 		click("routepointsdirnumber");
 
@@ -187,8 +187,8 @@ public class ProvisionCtiRoutePointsTest extends TestBase {
 	}
 
 	@Test(priority = 4, dataProvider = "getData")
-	public void provisionDeleteCtiRoute(String huntpilot, String huntlistname, String linegroupname, String cucm,String cuc)
-			throws InterruptedException, IOException {
+	public void provisionDeleteCtiRoute(String huntpilot, String huntlistname, String linegroupname, String cucm,
+			String cuc) throws InterruptedException, IOException {
 
 		String status;
 		String expected;
