@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name=" PME Delete Data Test"
+<testsuite name=" ProvisionLogin Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="1.895">
+           time="2.970">
   <properties />
   
   
-            <testcase name="loginasPMEAdmin" time="1.895" classname="Testcases.LoginTest" />
+            <testcase name="loginasPMEAdmin" time="2.970" classname="Testcases.LoginTest" />
       
 </testsuite>

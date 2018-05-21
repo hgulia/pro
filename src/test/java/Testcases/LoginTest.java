@@ -3,46 +3,43 @@ package Testcases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Base.TestBase;
 
 public class LoginTest extends TestBase {
-
+	
 	@Test(dataProvider = "getData")
 	public void loginasPMEAdmin(String uname, String pwd) throws InterruptedException {
-
+		log.debug("Login Class Start");
 		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("unamelogin"))));
 
 		login.sendKeys(uname);
 
 		log.debug("Inside Login Test");
 
-		type("pwdlogin", pwd);
+		Thread.sleep(200);
 
-		click("signinlogin");
+		WebElement pwddata = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("pwdlogin"))));
 
-		// Assert.assertTrue(isElementPresent(By.xpath(OR.getProperty("system"))),
-		// "Login not successful");
+		pwddata.sendKeys(pwd);
 
-		//driver.findElement(By.xpath(OR.getProperty("main"))).click();
+		WebElement sign = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("signinlogin"))));
+
+		sign.click();
 
 		Thread.sleep(300);
-		//driver.findElement(By.xpath(OR.getProperty("unlock"))).click();
-		Thread.sleep(100);
-		click("system");
 
 		log.debug("Login Successfully executed");
+		
+		log.debug("Login Class Finish");
 	}
 
 	@DataProvider
 	public Object[][] getData() {
 
-		String sheetName = "LoginTest";
+		String sheetName = "LoginProvision";
 
 		int rows = excel.getRowCount(sheetName);
 		int cols = excel.getColumnCount(sheetName);

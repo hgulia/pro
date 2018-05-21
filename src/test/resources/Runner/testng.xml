@@ -1,26 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="PME">
+
+
+<suite name="PMEPrvovision">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="Listeners.CustomListeners" />
 	</listeners>
 
-
-
-
-
-
-	<test name=" PME Delete Data Test">
+	<test name=" ProvisionLogin Test">
 		<classes>
 			<class name="Testcases.LoginTest" />
 		</classes>
 	</test> <!-- Test -->
 
-	<test name=" TestConfiguration Test">
+	<test name=" Provision Jobs Hunt List Test">
 		<classes>
-			<class name="Testcases.SecurityServiceGroupTest" />
+			<class name="Testcases.ProvisionHuntListTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Add Ext 7970 Test">
+		<classes>
+			<class name="Testcases.ProvisionAddExt7970Test" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Add Ext 8865 Test">
+		<classes>
+			<class name="Testcases.ProvisionAddExt8865Test" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name=" Provision Jobs Add Ext 9971 Test">
+		<classes>
+			<class name="Testcases.ProvisionAddExt9971Test" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name=" Provision Jobs Add Ext Analog Test">
+		<classes>
+			<class name="Testcases.ProvisionAddExtAnalogTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Add Ext Android Test">
+		<classes>
+			<class name="Testcases.ProvisionAddExtAndroidTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Cti Route Points Test">
+		<classes>
+			<class name="Testcases.ProvisionCtiRoutePointsTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Forward Calls Test">
+		<classes>
+			<class name="Testcases.ProvisionForwardCallsTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Hunt Pilot Test">
+		<classes>
+			<class name="Testcases.ProvisionHuntPilotTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Ldap User Test">
+		<classes>
+			<class name="Testcases.ProvisionLdapUserTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs LGM Test">
+		<classes>
+			<class name="Testcases.ProvisionLgmTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Line Group Test">
+		<classes>
+			<class name="Testcases.ProvisionLineGroupTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Local User Test">
+		<classes>
+			<class name="Testcases.ProvisionLocalUserTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name=" Provision Jobs Ldap Voice Test">
+		<classes>
+			<class name="Testcases.ProvisionLdapVoiceTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name=" Provision Jobs Local Voice Test">
+		<classes>
+			<class name="Testcases.ProvisionLocalVoiceTest" />
 		</classes>
 	</test> <!-- Test -->
 

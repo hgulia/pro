@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="5.557" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="1,406.977" tests="57" errors="0" skipped="0" failures="6">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
     <property name="java.vm.version" value="25.161-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\hgulia\eclipse-workspace\PME"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\hgulia\.jenkins\workspace\ProvisionJobs"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\hgulia\eclipse-workspace\PME"/>
+    <property name="user.dir" value="C:\Users\hgulia\.jenkins\workspace\ProvisionJobs"/>
     <property name="java.runtime.version" value="1.8.0_161-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
@@ -26,24 +26,26 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\hgulia\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8463528677971259626.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\hgulia\Documents\Maven\apache-maven-3.5.2\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;%C:\Program Files\Java\jdk1.8.0_161;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Users\hgulia\Documents\Maven\apache-maven-3.5.2\bin;C:\Program Files\PuTTY\;C:\Program Files\Maven\apache-maven-3.5.2;C:\Users\hgulia\Documents\Eclips\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;%C:\Program Files\Java\jdk1.8.0_161;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Users\hgulia\Documents\Maven\apache-maven-3.5.2\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Maven\apache-maven-3.5.2;C:\Users\hgulia\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="maven.conf" value="C:\Users\hgulia\Documents\Maven\apache-maven-3.5.2\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\hgulia\Documents\Maven\apache-maven-3.5.2\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\hgulia"/>
     <property name="user.timezone" value="America/New_York"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="hgulia"/>
-    <property name="java.class.path" value="C:\Users\hgulia\Documents\Eclips\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="C:\Users\hgulia\Documents\Maven\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -f \Users\hgulia\git\Pro\PmeProvisionJobs\pom.xml clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -52,7 +54,7 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\hgulia\eclipse-workspace\PME\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\hgulia\Documents\Maven\apache-maven-3.5.2\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,6 +62,216 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="loginasPMEAdmin" classname="Testcases.LoginTest" time="1.899"/>
-  <testcase name="serviceGroup" classname="Testcases.SecurityServiceGroupTest" time="3.658"/>
+  <testcase name="loginasPMEAdmin" classname="Testcases.LoginTest" time="2.972"/>
+  <testcase name="mainPageOpenHuntList" classname="Testcases.ProvisionHuntListTest" time="4.333"/>
+  <testcase name="provisionHuntList" classname="Testcases.ProvisionHuntListTest" time="30.502"/>
+  <testcase name="mainPageOpenDeleteHuntList" classname="Testcases.ProvisionHuntListTest" time="6.108"/>
+  <testcase name="provisionDeleteHuntList" classname="Testcases.ProvisionHuntListTest" time="35.522">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;searchLimit0&apos;]&quot;}&#10;  (Session info: chrome=66.0.3359.181)&#10;  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;AKK-DEV-QA-AUTO&apos;, ip: &apos;192.168.101.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}&#10;Session ID: 910928d432ba34b8f8ebe69c337cd93c&#10;*** Element info: {Using=xpath, value=.//*[@id=&apos;searchLimit0&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='searchLimit0']"}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'AKK-DEV-QA-AUTO', ip: '192.168.101.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 910928d432ba34b8f8ebe69c337cd93c
+*** Element info: {Using=xpath, value=.//*[@id='searchLimit0']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at Testcases.ProvisionHuntListTest.provisionDeleteHuntList(ProvisionHuntListTest.java:250)
+</failure>
+  </testcase>
+  <testcase name="mainPageOpenAddExt7970" classname="Testcases.ProvisionAddExt7970Test" time="6.602"/>
+  <testcase name="provisionAddExt7970" classname="Testcases.ProvisionAddExt7970Test" time="18.034">
+    <failure message="unknown error: Element &lt;div class=&quot;select2-container&quot; id=&quot;s2id_clan_1526911400396_action_40_148___remote_pkid_&quot;&gt;...&lt;/div&gt; is not clickable at point (957, 572). Other element would receive the click: &lt;div class=&quot;swal2-modal swal2-show&quot; tabindex=&quot;-1&quot; style=&quot;width: 500px; padding: 20px; background: rgb(255, 255, 255); display: block; min-height: 269px;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=66.0.3359.181)&#10;  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;AKK-DEV-QA-AUTO&apos;, ip: &apos;192.168.101.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}&#10;Session ID: 910928d432ba34b8f8ebe69c337cd93c" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <div class="select2-container" id="s2id_clan_1526911400396_action_40_148___remote_pkid_">...</div> is not clickable at point (957, 572). Other element would receive the click: <div class="swal2-modal swal2-show" tabindex="-1" style="width: 500px; padding: 20px; background: rgb(255, 255, 255); display: block; min-height: 269px;">...</div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'AKK-DEV-QA-AUTO', ip: '192.168.101.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 910928d432ba34b8f8ebe69c337cd93c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Base.TestBase.click(TestBase.java:119)
+	at Testcases.ProvisionAddExt7970Test.provisionAddExt7970(ProvisionAddExt7970Test.java:60)
+]]></failure>
+  </testcase>
+  <testcase name="mainPageOpenDeleteExt7970" classname="Testcases.ProvisionAddExt7970Test" time="5.83"/>
+  <testcase name="provisionDeleteExt7970" classname="Testcases.ProvisionAddExt7970Test" time="78.526"/>
+  <testcase name="mainPageOpenAddExt8865" classname="Testcases.ProvisionAddExt8865Test" time="7.264"/>
+  <testcase name="provisionAddExt8865" classname="Testcases.ProvisionAddExt8865Test" time="73.123"/>
+  <testcase name="mainPageOpenDeleteExt8865" classname="Testcases.ProvisionAddExt8865Test" time="6.822"/>
+  <testcase name="provisionDeleteExt8865" classname="Testcases.ProvisionAddExt8865Test" time="91.959"/>
+  <testcase name="mainPageOpenAddExt9971" classname="Testcases.ProvisionAddExt9971Test" time="6.938"/>
+  <testcase name="provisionAddExt9971" classname="Testcases.ProvisionAddExt9971Test" time="86.756">
+    <failure message="Cannot locate element with text: &#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;AKK-DEV-QA-AUTO&apos;, ip: &apos;192.168.101.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'AKK-DEV-QA-AUTO', ip: '192.168.101.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at Testcases.ProvisionAddExt9971Test.provisionAddExt9971(ProvisionAddExt9971Test.java:164)
+</failure>
+  </testcase>
+  <testcase name="mainPageOpenDeleteExt9971" classname="Testcases.ProvisionAddExt9971Test" time="6.38"/>
+  <testcase name="provisionDeleteExt9971" classname="Testcases.ProvisionAddExt9971Test" time="94.489"/>
+  <testcase name="mainPageOpenAddExtanalog" classname="Testcases.ProvisionAddExtAnalogTest" time="6.325"/>
+  <testcase name="provisionAddExtanalog" classname="Testcases.ProvisionAddExtAnalogTest" time="61.58"/>
+  <testcase name="mainPageOpenDeleteExtAnalog" classname="Testcases.ProvisionAddExtAnalogTest" time="6.343"/>
+  <testcase name="provisionDeleteExt9971" classname="Testcases.ProvisionAddExtAnalogTest" time="53.963"/>
+  <testcase name="mainPageOpenAddExtandroid" classname="Testcases.ProvisionAddExtAndroidTest" time="6.395"/>
+  <testcase name="provisionAddExtandroid" classname="Testcases.ProvisionAddExtAndroidTest" time="50.194"/>
+  <testcase name="mainPageOpenDeleteExtandroid" classname="Testcases.ProvisionAddExtAndroidTest" time="6.132"/>
+  <testcase name="provisionDeleteExt9971" classname="Testcases.ProvisionAddExtAndroidTest" time="49.288"/>
+  <testcase name="mainPageOpenCtiRoute" classname="Testcases.ProvisionCtiRoutePointsTest" time="5.448"/>
+  <testcase name="provisionCtiRoute" classname="Testcases.ProvisionCtiRoutePointsTest" time="8.683">
+    <failure message="unknown error: Element &lt;div class=&quot;select2-container&quot; id=&quot;s2id_clan_1526912132609_action_14_34__pattern_&quot;&gt;...&lt;/div&gt; is not clickable at point (942, 434). Other element would receive the click: &lt;img class=&quot;swal2-image&quot; src=&quot;https://192.168.110.213/pme/index.php/../media/img/swal/loading.gif&quot; style=&quot;display: block;&quot;&gt;&#10;  (Session info: chrome=66.0.3359.181)&#10;  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;AKK-DEV-QA-AUTO&apos;, ip: &apos;192.168.101.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}&#10;Session ID: 910928d432ba34b8f8ebe69c337cd93c" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <div class="select2-container" id="s2id_clan_1526912132609_action_14_34__pattern_">...</div> is not clickable at point (942, 434). Other element would receive the click: <img class="swal2-image" src="https://192.168.110.213/pme/index.php/../media/img/swal/loading.gif" style="display: block;">
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'AKK-DEV-QA-AUTO', ip: '192.168.101.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 910928d432ba34b8f8ebe69c337cd93c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Base.TestBase.click(TestBase.java:119)
+	at Testcases.ProvisionCtiRoutePointsTest.provisionCtiRoute(ProvisionCtiRoutePointsTest.java:67)
+]]></failure>
+  </testcase>
+  <testcase name="mainPageOpenDeleteCtiRoute" classname="Testcases.ProvisionCtiRoutePointsTest" time="7.024"/>
+  <testcase name="provisionDeleteCtiRoute" classname="Testcases.ProvisionCtiRoutePointsTest" time="23.205"/>
+  <testcase name="mainPageOpenForwardCalls" classname="Testcases.ProvisionForwardCallsTest" time="6.796"/>
+  <testcase name="provisionForwardCalls" classname="Testcases.ProvisionForwardCallsTest" time="21.564"/>
+  <testcase name="mainPageOpenDeleteForwardCalls" classname="Testcases.ProvisionForwardCallsTest" time="5.802"/>
+  <testcase name="provisionDeleteForwardCalls" classname="Testcases.ProvisionForwardCallsTest" time="20.878"/>
+  <testcase name="mainPageOpenHuntPilot" classname="Testcases.ProvisionHuntPilotTest" time="6.404"/>
+  <testcase name="provision" classname="Testcases.ProvisionHuntPilotTest" time="45.999"/>
+  <testcase name="mainPageOpenDeleteHuntPilot" classname="Testcases.ProvisionHuntPilotTest" time="5.879"/>
+  <testcase name="provisionDeleteHuntPilot" classname="Testcases.ProvisionHuntPilotTest" time="21.912"/>
+  <testcase name="mainPageOpenLdapUser" classname="Testcases.ProvisionLdapUserTest" time="5.631"/>
+  <testcase name="provisionLdapUser" classname="Testcases.ProvisionLdapUserTest" time="36.707"/>
+  <testcase name="mainPageOpenDeleteLdapUser" classname="Testcases.ProvisionLdapUserTest" time="5.837"/>
+  <testcase name="provisionDeleteLdapUser" classname="Testcases.ProvisionLdapUserTest" time="42.11"/>
+  <testcase name="mainPageOpenLgm" classname="Testcases.ProvisionLgmTest" time="5.726"/>
+  <testcase name="provisionLgm" classname="Testcases.ProvisionLgmTest" time="24.559">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;select2-drop&apos;]/ul/li[3]/div&quot;}&#10;  (Session info: chrome=66.0.3359.181)&#10;  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;AKK-DEV-QA-AUTO&apos;, ip: &apos;192.168.101.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}&#10;Session ID: 910928d432ba34b8f8ebe69c337cd93c&#10;*** Element info: {Using=xpath, value=.//*[@id=&apos;select2-drop&apos;]/ul/li[3]/div}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='select2-drop']/ul/li[3]/div"}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'AKK-DEV-QA-AUTO', ip: '192.168.101.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 910928d432ba34b8f8ebe69c337cd93c
+*** Element info: {Using=xpath, value=.//*[@id='select2-drop']/ul/li[3]/div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at Base.TestBase.click(TestBase.java:119)
+	at Testcases.ProvisionLgmTest.provisionLgm(ProvisionLgmTest.java:63)
+</failure>
+  </testcase>
+  <testcase name="mainPageOpenDeleteLgm" classname="Testcases.ProvisionLgmTest" time="4.934"/>
+  <testcase name="provisionDeleteLgm" classname="Testcases.ProvisionLgmTest" time="19.889"/>
+  <testcase name="mainPageOpenLineGroup" classname="Testcases.ProvisionLineGroupTest" time="5.638"/>
+  <testcase name="provisionLineGroup" classname="Testcases.ProvisionLineGroupTest" time="22.524"/>
+  <testcase name="mainPageOpenDeleteLineGroup" classname="Testcases.ProvisionLineGroupTest" time="5.725"/>
+  <testcase name="provisionDeleteLineGroup" classname="Testcases.ProvisionLineGroupTest" time="19.406"/>
+  <testcase name="mainPageOpenLocalUser" classname="Testcases.ProvisionLocalUserTest" time="5.655"/>
+  <testcase name="provisionLocalUser" classname="Testcases.ProvisionLocalUserTest" time="34.684"/>
+  <testcase name="mainPageOpenDeleteLocalUser" classname="Testcases.ProvisionLocalUserTest" time="5.648"/>
+  <testcase name="provisionDeleteLocalUser" classname="Testcases.ProvisionLocalUserTest" time="38.596"/>
+  <testcase name="mainPageOpenLdapVoice" classname="Testcases.ProvisionLdapVoiceTest" time="6.141"/>
+  <testcase name="provisionLdapVoice" classname="Testcases.ProvisionLdapVoiceTest" time="70.816"/>
+  <testcase name="mainPageOpenLocalVoice" classname="Testcases.ProvisionLocalVoiceTest" time="5.796"/>
+  <testcase name="provisionLocalVoice" classname="Testcases.ProvisionLocalVoiceTest" time="58.981">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;cutree_1&apos;]/a/span&quot;}&#10;  (Session info: chrome=66.0.3359.181)&#10;  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;AKK-DEV-QA-AUTO&apos;, ip: &apos;192.168.101.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}&#10;Session ID: 910928d432ba34b8f8ebe69c337cd93c&#10;*** Element info: {Using=xpath, value=.//*[@id=&apos;cutree_1&apos;]/a/span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='cutree_1']/a/span"}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'AKK-DEV-QA-AUTO', ip: '192.168.101.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\hgulia\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 910928d432ba34b8f8ebe69c337cd93c
+*** Element info: {Using=xpath, value=.//*[@id='cutree_1']/a/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at Base.TestBase.click(TestBase.java:119)
+	at Testcases.ProvisionLocalVoiceTest.provisionLocalVoice(ProvisionLocalVoiceTest.java:104)
+</failure>
+  </testcase>
 </testsuite>

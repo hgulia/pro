@@ -1,6 +1,16 @@
-03/04/2018 16:37:41 devpinoyLogger Config file is loaded!!!
-03/04/2018 16:37:41 devpinoyLogger OR file is loaded!!!
-03/04/2018 16:37:45 devpinoyLogger Chrome launched!!!
-03/04/2018 16:37:46 devpinoyLogger Navigated to : https://192.168.110.199/pme/index.php/user/login
-03/04/2018 16:37:48 devpinoyLogger Inside Login Test
-03/04/2018 16:37:49 devpinoyLogger Login Successfully executed
+17/05/2018 16:54:48 devpinoyLogger Config file is loaded!!!
+17/05/2018 16:54:48 devpinoyLogger OR file is loaded!!!
+17/05/2018 16:54:51 devpinoyLogger Chrome launched!!!
+17/05/2018 16:54:53 devpinoyLogger Navigated to : https://192.168.110.213/pme/index.php/user/login
+17/05/2018 16:54:54 devpinoyLogger Inside Login Test
+17/05/2018 16:54:57 devpinoyLogger Login Successfully executed
+17/05/2018 16:55:09 devpinoyLogger Click on perform
+17/05/2018 16:55:28 devpinoyLogger Provision Success! Records find:: 1 records found
+17/05/2018 16:55:30 devpinoyLogger 00 Hunt List QA Auto 054
+17/05/2018 16:55:31 devpinoyLogger Provision Success! found expected data
+17/05/2018 16:55:46 devpinoyLogger Click on  Delete job perform
+17/05/2018 16:55:59 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
+17/05/2018 16:56:36 devpinoyLogger Click on perform
+17/05/2018 16:56:57 devpinoyLogger Provision Success! Records find:: 1 records found
+17/05/2018 16:57:35 devpinoyLogger Click on  Delete perform
+17/05/2018 16:57:56 devpinoyLogger Provision Success! Data deleted from CUCM Records find:: 0 records found

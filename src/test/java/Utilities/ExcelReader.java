@@ -9,6 +9,10 @@ import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DataFormat;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
@@ -18,9 +22,13 @@ import org.apache.poi.xssf.usermodel.XSSFHyperlink;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.jsoup.select.Evaluator;
 
 public class ExcelReader {
 
+	String value;
+
+	DataFormatter df = new DataFormatter();
 	public String path;
 	public FileInputStream fis = null;
 	public FileOutputStream fileOut = null;
@@ -36,6 +44,7 @@ public class ExcelReader {
 			fis = new FileInputStream(path);
 			workbook = new XSSFWorkbook(fis);
 			sheet = workbook.getSheetAt(0);
+
 			fis.close();
 		} catch (Exception e) {
 
@@ -58,7 +67,10 @@ public class ExcelReader {
 	}
 
 	// returns the data from a cell
+	@SuppressWarnings("deprecation")
 	public String getCellData(String sheetName, String colName, int rowNum) {
+
+		FormulaEvaluator evaluator = workbook.getCreationHelper().createFormulaEvaluator();
 		try {
 			if (rowNum <= 0)
 				return "";
@@ -86,12 +98,13 @@ public class ExcelReader {
 
 			if (cell == null)
 				return "";
-
+			evaluator.evaluate(cell);
 			if (cell.getCellType() == Cell.CELL_TYPE_STRING)
-				return cell.getStringCellValue();
+				return value = df.formatCellValue(cell, evaluator);
+			// return cell.toString();
 			else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC || cell.getCellType() == Cell.CELL_TYPE_FORMULA) {
-
 				String cellText = String.valueOf(cell.getNumericCellValue());
+
 				if (HSSFDateUtil.isCellDateFormatted(cell)) {
 
 					double d = cell.getNumericCellValue();
@@ -117,7 +130,10 @@ public class ExcelReader {
 	}
 
 	// returns the data from a cell
+	@SuppressWarnings("deprecation")
 	public String getCellData(String sheetName, int colNum, int rowNum) {
+		FormulaEvaluator evaluator = workbook.getCreationHelper().createFormulaEvaluator();
+
 		try {
 			if (rowNum <= 0)
 				return "";
@@ -134,9 +150,15 @@ public class ExcelReader {
 			cell = row.getCell(colNum);
 			if (cell == null)
 				return "";
+			// System.out.println(cell.getStringCellValue());
 
-			if (cell.getCellType() == Cell.CELL_TYPE_STRING)
-				return cell.getStringCellValue();
+			evaluator.evaluate(cell);
+
+			if (cell.getCellTypeEnum() == CellType.STRING)
+
+				// return cell.getStringCellValue().toString();
+				return df.formatCellValue(cell, evaluator);
+
 			else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC || cell.getCellType() == Cell.CELL_TYPE_FORMULA) {
 
 				String cellText = String.valueOf(cell.getNumericCellValue());
@@ -259,6 +281,7 @@ public class ExcelReader {
 			hlink_style.setFont(hlink_font);
 			// hlink_style.setWrapText(true);
 
+			@SuppressWarnings("deprecation")
 			XSSFHyperlink link = createHelper.createHyperlink(XSSFHyperlink.LINK_FILE);
 			link.setAddress(url);
 			cell.setHyperlink(link);
@@ -313,6 +336,7 @@ public class ExcelReader {
 	}
 
 	// returns true if column is created successfully
+	@SuppressWarnings("deprecation")
 	public boolean addColumn(String sheetName, String colName) {
 
 		try {
@@ -354,6 +378,7 @@ public class ExcelReader {
 	}
 
 	// removes a column and all the contents
+	@SuppressWarnings("deprecation")
 	public boolean removeColumn(String sheetName, int colNum) {
 		try {
 			if (!isSheetExist(sheetName))
@@ -363,6 +388,7 @@ public class ExcelReader {
 			sheet = workbook.getSheet(sheetName);
 			XSSFCellStyle style = workbook.createCellStyle();
 			style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
+			@SuppressWarnings("unused")
 			XSSFCreationHelper createHelper = workbook.getCreationHelper();
 			style.setFillPattern(HSSFCellStyle.NO_FILL);
 
