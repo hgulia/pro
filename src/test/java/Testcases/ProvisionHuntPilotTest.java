@@ -388,6 +388,8 @@ public class ProvisionHuntPilotTest extends TestBase {
 			click("ciscofindbtn");
 
 			Thread.sleep(1000);
+			
+			
 
 			status = (driver.findElement(By.xpath(OR.getProperty("ciscorecordfound"))).getText());
 
