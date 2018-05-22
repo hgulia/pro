@@ -18,7 +18,7 @@ public class ProvisionAddExtAndroidTest extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenAddExtandroid() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionAddExtAndroidTest");
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -46,9 +46,9 @@ public class ProvisionAddExtAndroidTest extends TestBase {
 		action.dragAndDrop(jobsource, jobtarget).build().perform();
 
 		Thread.sleep(2000);
-		
+
 		type("androidphone", "AndroidTestDevice");
-		
+
 		Thread.sleep(2000);
 
 		click("androidcucmuser");
@@ -56,7 +56,7 @@ public class ProvisionAddExtAndroidTest extends TestBase {
 		driver.findElement(By.xpath(OR.getProperty("ldapdatainput"))).sendKeys("Kenrick", Keys.ENTER);
 		Thread.sleep(3000);
 		click("ldapfirstoptionuser");
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 
 		click("androidcucmline");
 		Thread.sleep(2000);
@@ -216,8 +216,6 @@ public class ProvisionAddExtAndroidTest extends TestBase {
 
 			driver.get(cucm);
 
-		
-
 			Thread.sleep(4000);
 
 			WebElement device = (driver.findElement(By.xpath(OR.getProperty("ciscodevicebutton"))));
@@ -268,6 +266,7 @@ public class ProvisionAddExtAndroidTest extends TestBase {
 			}
 
 		}
+		log.debug(" Test Class Finish:  ProvisionAddExtAndroidTest");
 	}
 
 	@DataProvider(name = "getData")

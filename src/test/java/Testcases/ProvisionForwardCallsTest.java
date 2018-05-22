@@ -16,7 +16,7 @@ public class ProvisionForwardCallsTest extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenForwardCalls() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionForwardCallsTest");
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -281,6 +281,8 @@ public class ProvisionForwardCallsTest extends TestBase {
 				log.debug("found expected data, delete job failed to delete data:: " + status);
 			}
 		}
+		
+		log.debug(" Test Class Finish:  ProvisionForwardCallsTest");
 
 	}
 

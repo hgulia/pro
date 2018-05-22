@@ -16,6 +16,7 @@ public class ProvisionLocalUserTest extends TestBase {
 	@Test(priority = 1)
 	public void mainPageOpenLocalUser() throws InterruptedException {
 
+		log.debug(" Test Class Start:  ProvisionLocalUserTest");
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -315,6 +316,8 @@ public class ProvisionLocalUserTest extends TestBase {
 				log.debug("Provision Success!Delete job Success  No Records find:: " + status);
 			}
 		}
+		
+		log.debug(" Test Class Finish:  ProvisionLocalUserTest");
 	}
 
 	@DataProvider(name = "getData")

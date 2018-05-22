@@ -13,11 +13,13 @@ import Base.TestBase;
 
 public class ProvisionAddExt7970Test extends TestBase {
 
+	
 	String macid;
 
 	@Test(priority = 1)
 	public void mainPageOpenAddExt7970() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionAddExt7970Test");
+		
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -372,9 +374,10 @@ public class ProvisionAddExt7970Test extends TestBase {
 				log.error("No records");
 			}
 		}
-
+		log.debug(" Test Class Finish:  ProvisionAddExt7970Test");
 	}
 
+	
 	@DataProvider(name = "getData")
 	public Object[][] getData() {
 

@@ -18,7 +18,7 @@ public class ProvisionAddExtAnalogTest extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenAddExtanalog() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionAddExtAnalogTest");
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -270,8 +270,12 @@ public class ProvisionAddExtAnalogTest extends TestBase {
 				log.debug("Provision failed!   Records find in CUCM:: " + status);
 			}
 
+	
 		}
+		
+		log.debug(" Test Class Finish:  ProvisionAddExtAnalogTest");
 	}
+	
 
 	@DataProvider(name = "getData")
 	public Object[][] getData() {

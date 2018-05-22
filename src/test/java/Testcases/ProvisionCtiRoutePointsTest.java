@@ -16,7 +16,7 @@ public class ProvisionCtiRoutePointsTest extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenCtiRoute() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionCtiRoutePointsTest");
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -284,6 +284,8 @@ public class ProvisionCtiRoutePointsTest extends TestBase {
 				log.debug("found expected data, delete job failed to delete data:: " + status);
 			}
 		}
+
+		log.debug(" Test Class Finish:  ProvisionAddExtCtiRoutePointsTest");
 
 	}
 

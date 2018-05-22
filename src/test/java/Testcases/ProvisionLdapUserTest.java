@@ -15,6 +15,7 @@ public class ProvisionLdapUserTest extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenLdapUser() throws InterruptedException {
+		log.debug(" Test Class Start:  ProvisionLdapUserTest");
 
 		driver.get("https://192.168.110.213/pme/index.php/");
 
@@ -31,7 +32,7 @@ public class ProvisionLdapUserTest extends TestBase {
 	}
 
 	@Test(priority = 2, dataProvider = "getData")
-	public void provisionLdapUser(String huntpilot, String huntlistname, String linegroupname, String cucm,String cuc)
+	public void provisionLdapUser(String huntpilot, String huntlistname, String linegroupname, String cucm, String cuc)
 			throws InterruptedException, IOException {
 
 		Actions action = new Actions(driver);
@@ -179,8 +180,8 @@ public class ProvisionLdapUserTest extends TestBase {
 	}
 
 	@Test(priority = 4, dataProvider = "getData")
-	public void provisionDeleteLdapUser(String huntpilot, String huntlistname, String linegroupname, String cucm,String cuc)
-			throws InterruptedException, IOException {
+	public void provisionDeleteLdapUser(String huntpilot, String huntlistname, String linegroupname, String cucm,
+			String cuc) throws InterruptedException, IOException {
 
 		Actions action = new Actions(driver);
 
@@ -191,8 +192,6 @@ public class ProvisionLdapUserTest extends TestBase {
 		action.dragAndDrop(jobsource, jobtarget).build().perform();
 
 		Thread.sleep(1000);
-
-	
 
 		click("deleteldapuser");
 
@@ -302,6 +301,8 @@ public class ProvisionLdapUserTest extends TestBase {
 			}
 
 		}
+
+		log.debug(" Test Class Finish:  ProvisionLdapUserTest");
 
 	}
 

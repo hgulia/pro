@@ -16,7 +16,8 @@ public class ProvisionLgmTest extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenLgm() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionLgmTest");
+		
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -283,6 +284,8 @@ public class ProvisionLgmTest extends TestBase {
 				log.debug("found expected data, delete job failed to delete data:: " + status);
 			}
 		}
+		
+		log.debug(" Test Class Finish:  ProvisionLgmTest");
 
 	}
 

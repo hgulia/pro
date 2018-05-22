@@ -16,6 +16,8 @@ public class ProvisionLineGroupTest extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenLineGroup() throws InterruptedException {
+		
+		log.debug(" Test Class Start:  ProvisionLineGroupTest");
 
 		driver.get("https://192.168.110.213/pme/index.php/");
 
@@ -268,6 +270,8 @@ public class ProvisionLineGroupTest extends TestBase {
 				log.debug("found expected data, delete job failed to delete data:: " + status);
 			}
 		}
+		
+		log.debug(" Test Class Finish:  ProvisionLineGroupTest");
 
 	}
 

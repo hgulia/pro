@@ -18,7 +18,8 @@ public class ProvisionAddExt9971Test extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenAddExt9971() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionAddExt9971Test");
+		
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -66,14 +67,14 @@ public class ProvisionAddExt9971Test extends TestBase {
 		Thread.sleep(2000);
 
 		type("9971deviceprofile", "7901profile");
-		
+
 		Thread.sleep(3000);
 
-		waitExplicit.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("9971generatecode"))));
+		WebElement element = waitExplicit
+				.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("9971generatecode"))));
 
-		click("9971generatecode");
-		
-		//click("9971generatecode");
+		element.click();
+		// click("9971generatecode");
 
 		Thread.sleep(4000);
 
@@ -375,7 +376,7 @@ public class ProvisionAddExt9971Test extends TestBase {
 				log.error("No records");
 			}
 		}
-
+		log.debug(" Test Class Finish:  ProvisionAddExt9971Test");
 	}
 
 	@DataProvider(name = "getData")

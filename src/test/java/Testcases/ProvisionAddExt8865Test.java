@@ -18,7 +18,7 @@ public class ProvisionAddExt8865Test extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenAddExt8865() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionAddExt8865Test");
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -69,11 +69,12 @@ public class ProvisionAddExt8865Test extends TestBase {
 
 		Thread.sleep(3000);
 
-		waitExplicit.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("8865generatecode"))));
+		WebElement element = waitExplicit
+				.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("8865generatecode"))));
+
+		element.click();
 		
-		click("8865generatecode");
-		
-		//click("8865generatecode");
+		// click("8865generatecode");
 
 		Thread.sleep(4000);
 
@@ -375,7 +376,7 @@ public class ProvisionAddExt8865Test extends TestBase {
 				log.error("No records");
 			}
 		}
-
+		log.debug(" Test Class Finish:  ProvisionAddExt8865Test");
 	}
 
 	@DataProvider(name = "getData")

@@ -17,6 +17,9 @@ public class ProvisionHuntListTest extends TestBase {
 	@Test(priority = 1)
 	public void mainPageOpenHuntList() throws InterruptedException {
 
+		log.debug(" Test Class Start:  ProvisionHuntListTest");
+
+		log.debug(" This is First Test Class in project");
 		click("main");
 
 		Thread.sleep(500);
@@ -36,11 +39,11 @@ public class ProvisionHuntListTest extends TestBase {
 	}
 
 	@Test(priority = 2, dataProvider = "getData")
-	public void provisionHuntList(String huntpilot, String huntlistname, String linegroupname, String cucm,String cuc)
+	public void provisionHuntList(String huntpilot, String huntlistname, String linegroupname, String cucm, String cuc)
 			throws InterruptedException, IOException {
 
 		String huntpilotactual;
-		String huntlistctual;
+
 		String status;
 		String expected;
 
@@ -180,8 +183,8 @@ public class ProvisionHuntListTest extends TestBase {
 	}
 
 	@Test(priority = 4, dataProvider = "getData")
-	public void provisionDeleteHuntList(String huntpilot, String huntlistname, String linegroupname, String cucm,String cuc)
-			throws InterruptedException, IOException {
+	public void provisionDeleteHuntList(String huntpilot, String huntlistname, String linegroupname, String cucm,
+			String cuc) throws InterruptedException, IOException {
 
 		String huntpilotactual;
 		String huntlistctual;
@@ -278,6 +281,8 @@ public class ProvisionHuntListTest extends TestBase {
 				log.debug("found expected data, delete job failed to delete data:: " + status);
 			}
 		}
+
+		log.debug(" Test Class Finish:  ProvisionHuntListTest");
 
 	}
 

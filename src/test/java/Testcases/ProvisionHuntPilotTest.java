@@ -16,7 +16,7 @@ public class ProvisionHuntPilotTest extends TestBase {
 
 	@Test(priority = 1)
 	public void mainPageOpenHuntPilot() throws InterruptedException {
-
+		log.debug(" Test Class Start:  ProvisionHuntPilotTest");
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -32,7 +32,7 @@ public class ProvisionHuntPilotTest extends TestBase {
 	}
 
 	@Test(priority = 2, dataProvider = "getData")
-	public void provision(String huntpilot, String huntlistname, String linegroupname, String cucm,String cuc)
+	public void provision(String huntpilot, String huntlistname, String linegroupname, String cucm, String cuc)
 			throws InterruptedException, IOException {
 
 		String huntpilotactual;
@@ -77,11 +77,11 @@ public class ProvisionHuntPilotTest extends TestBase {
 		click("addlinegroupdirectorypro");
 
 		Thread.sleep(2000);
-		
+
 		dirNumber = driver.findElement(By.xpath(OR.getProperty("dirnumberselectoption"))).getText();
 
 		Thread.sleep(1000);
-		
+
 		click("addlinedirectoryoptionpro");
 
 		Thread.sleep(1000);
@@ -239,11 +239,11 @@ public class ProvisionHuntPilotTest extends TestBase {
 
 				Thread.sleep(1000);
 
-			String	huntpilotactualline = (driver.findElement(By.xpath(OR.getProperty("ciscolinegrouptactual")))
+				String huntpilotactualline = (driver.findElement(By.xpath(OR.getProperty("ciscolinegrouptactual")))
 						.getAttribute("value"));
 
 				Thread.sleep(1000);
-				
+
 				System.out.println(huntpilotactualline);
 				System.out.println(linegroupname);
 
@@ -257,13 +257,10 @@ public class ProvisionHuntPilotTest extends TestBase {
 
 				Thread.sleep(1000);
 
-				
-				
-				String diractual=(driver.findElement(By.xpath(OR.getProperty("ciscodirnumber")))).getText();
+				String diractual = (driver.findElement(By.xpath(OR.getProperty("ciscodirnumber")))).getText();
 
 				Thread.sleep(1000);
-				
-				
+
 				System.out.println(dirNumber);
 				System.out.println(diractual);
 
@@ -278,6 +275,8 @@ public class ProvisionHuntPilotTest extends TestBase {
 			}
 
 		}
+
+		log.debug(" Test Class Finish:  ProvisionHuntPilotTest");
 	}
 
 	@Test(priority = 3)
@@ -298,8 +297,8 @@ public class ProvisionHuntPilotTest extends TestBase {
 	}
 
 	@Test(priority = 4, dataProvider = "getData")
-	public void provisionDeleteHuntPilot(String huntpilot, String huntlistname, String linegroupname, String cucm,String cuc)
-			throws InterruptedException, IOException {
+	public void provisionDeleteHuntPilot(String huntpilot, String huntlistname, String linegroupname, String cucm,
+			String cuc) throws InterruptedException, IOException {
 
 		String status;
 		String expected;
@@ -351,7 +350,7 @@ public class ProvisionHuntPilotTest extends TestBase {
 
 			driver.get(cucm);
 
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 
 			WebElement callrouting = (driver.findElement(By.xpath(OR.getProperty("ciscocallrouting"))));
 
@@ -388,8 +387,6 @@ public class ProvisionHuntPilotTest extends TestBase {
 			click("ciscofindbtn");
 
 			Thread.sleep(1000);
-			
-			
 
 			status = (driver.findElement(By.xpath(OR.getProperty("ciscorecordfound"))).getText());
 
