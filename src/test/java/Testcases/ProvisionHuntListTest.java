@@ -19,20 +19,20 @@ public class ProvisionHuntListTest extends TestBase {
 
 		log.debug(" Test Class Start:  ProvisionHuntListTest");
 
-		log.debug(" This is First Test Class in project");
-		click("main");
+		log.debug(" This is the First Test Class in project");
+		jsclick("main");
 
 		Thread.sleep(500);
 
-		click("unlock");
+		jsclick("unlock");
 
 		Thread.sleep(500);
 
-		click("actactions");
+		jsclick("actactions");
 
 		Thread.sleep(500);
 
-		click("provisionactions");
+		jsclick("provisionactions");
 
 		Thread.sleep(1000);
 
@@ -59,19 +59,33 @@ public class ProvisionHuntListTest extends TestBase {
 
 		type("huntlistnameaddjob4", huntlistname);
 
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 
 		click("addlinegroupaddjob4");
 
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
-		click("addlinegroupoptionjob4");
+		// click("addlinegroupoptionjob4");
 
-		linegroupname = "LGN1";
+		WebElement enter = driver.findElement(By.xpath(OR.getProperty("snrinputuser")));
 
-		Thread.sleep(1000);
+		enter.click();
 
-		click("performpro");
+		Thread.sleep(500);
+
+		enter.sendKeys("WWWWW");
+
+		Thread.sleep(2000);
+
+		enter.sendKeys(Keys.ENTER);
+
+		// type("snrinputuser", "WWWWW");
+
+		linegroupname = "WWWWW";
+
+		Thread.sleep(4000);
+
+		jsclick("performpro");
 
 		log.debug("Click on perform");
 
@@ -155,11 +169,22 @@ public class ProvisionHuntListTest extends TestBase {
 
 				if (huntpilotactual.equals(huntlistname)) {
 
-					log.debug("Provision Success! found expected data");
+					log.debug("Provision Success! found expected data : Hunt List Name");
 
 				} else {
-					log.debug("Provision Success! in Callmanager Records not Match:: ");
+					log.debug("Provision Success! in Callmanager Records not Match: Hunt List Name ");
 				}
+
+				String linegroupctual = driver.findElement(By.xpath(OR.getProperty("ciscolinegroupselect"))).getText();
+
+				if (linegroupname.equalsIgnoreCase(linegroupctual)) {
+
+					log.debug("Provision Success! found expected data : Line  Group");
+
+				} else {
+					log.debug("Provision Success! in Callmanager Records not Match Line Group:: ");
+				}
+
 			}
 
 		}
@@ -186,8 +211,6 @@ public class ProvisionHuntListTest extends TestBase {
 	public void provisionDeleteHuntList(String huntpilot, String huntlistname, String linegroupname, String cucm,
 			String cuc) throws InterruptedException, IOException {
 
-		String huntpilotactual;
-		String huntlistctual;
 		String status;
 		String expected;
 

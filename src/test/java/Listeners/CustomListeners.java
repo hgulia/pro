@@ -1,7 +1,14 @@
 package Listeners;
 
 import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
+
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -11,9 +18,13 @@ import org.testng.SkipException;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Base.TestBase;
+import Utilities.MonitoringMail;
+import Utilities.TestConfig;
 import Utilities.TestUtil;
 
-public class CustomListeners extends TestBase implements ITestListener {
+public class CustomListeners extends TestBase implements ITestListener, ISuiteListener {
+
+	public String messageBody;
 
 	public void onFinish(ITestContext context) {
 
@@ -60,12 +71,12 @@ public class CustomListeners extends TestBase implements ITestListener {
 	public void onTestStart(ITestResult arg0) {
 
 		test = rep.startTest(arg0.getName().toUpperCase());
-		/*if(!TestUtil.isTestRunnable(arg0.getName(), excel)) {
-			
-			throw new SkipException("Skipping the test  "+arg0.getName().toUpperCase()+" as the run mode is No");
-		}
-		rep.endTest(test);
-		rep.flush();*/
+		/*
+		 * if(!TestUtil.isTestRunnable(arg0.getName(), excel)) {
+		 * 
+		 * throw new SkipException("Skipping the test  "+arg0.getName().toUpperCase()
+		 * +" as the run mode is No"); } rep.endTest(test); rep.flush();
+		 */
 	}
 
 	public void onTestSuccess(ITestResult arg0) {
@@ -92,4 +103,21 @@ public class CustomListeners extends TestBase implements ITestListener {
 
 	}
 
+	public void onStart(ISuite suite) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void onFinish(ISuite suite) {
+		/*
+		 * MonitoringMail mail = new MonitoringMail();
+		 * 
+		 * messageBody =
+		 * "C:/Users/hgulia/git/Pro/PmeProvisionJobs/target/surefire-reports/html/extent.html";
+		 * try { mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to,
+		 * TestConfig.subject, messageBody); } catch (AddressException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); } catch (MessagingException
+		 * e) { // TODO Auto-generated catch block e.printStackTrace(); } }
+		 */
+	}
 }

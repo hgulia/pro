@@ -29,7 +29,7 @@ public class ProvisionForwardCallsTest extends TestBase {
 
 		Thread.sleep(1000);
 
-		Thread.sleep(1000);
+		
 
 	}
 
@@ -156,9 +156,14 @@ public class ProvisionForwardCallsTest extends TestBase {
 					log.debug("Provision Success! Records not Match:: ");
 				}
 			}
+				else {
+					
+					log.debug("Provision Success! 1 Records not found :: " + status);
+				}
+			}
 
 		}
-	}
+	
 
 	@Test(priority = 3)
 	public void mainPageOpenDeleteForwardCalls() throws InterruptedException {

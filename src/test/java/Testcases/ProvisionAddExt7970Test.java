@@ -74,7 +74,7 @@ public class ProvisionAddExt7970Test extends TestBase {
 
 		Thread.sleep(2000);
 
-		System.out.println(macid);
+		System.out.println("7970" +macid);
 
 		type("7970deviceprofile", "7910profile");
 

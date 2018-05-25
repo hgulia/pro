@@ -1,85 +1,134 @@
-22/05/2018 11:45:59 devpinoyLogger Config file is loaded!!!
-22/05/2018 11:45:59 devpinoyLogger OR file is loaded!!!
-22/05/2018 11:46:02 devpinoyLogger Chrome launched!!!
-22/05/2018 11:46:03 devpinoyLogger Navigated to : https://192.168.110.213/pme/index.php/user/login
-22/05/2018 11:46:04 devpinoyLogger Login Class Start
-22/05/2018 11:46:04 devpinoyLogger Inside Login Test
-22/05/2018 11:46:07 devpinoyLogger Login Successfully executed
-22/05/2018 11:46:07 devpinoyLogger Login Class Finish
-22/05/2018 11:46:19 devpinoyLogger Click on perform
-22/05/2018 11:46:39 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 11:46:41 devpinoyLogger 00 Hunt List QA Auto 054
-22/05/2018 11:46:42 devpinoyLogger Provision Success! found expected data
-22/05/2018 11:46:55 devpinoyLogger Click on  Delete job perform
-22/05/2018 11:47:09 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
-22/05/2018 11:47:57 devpinoyLogger Click on perform
-22/05/2018 11:48:25 devpinoyLogger Mac Device id is matched in CUC
-22/05/2018 11:48:26 devpinoyLogger Device profile is matched in CUC
-22/05/2018 11:49:01 devpinoyLogger Click on  Delete perform
-22/05/2018 11:49:46 devpinoyLogger Delete Provision Success! Mac Device id is Deleted in CUC
-22/05/2018 11:50:06 devpinoyLogger Delete Provision Success! Device profile is Deleted in CUC
-22/05/2018 11:50:55 devpinoyLogger Click on perform
-22/05/2018 11:51:23 devpinoyLogger Mac Device id is matched in CUC
-22/05/2018 11:51:23 devpinoyLogger Device profile is matched in CUC
-22/05/2018 11:51:58 devpinoyLogger Click on  Delete perform
-22/05/2018 11:52:42 devpinoyLogger Delete Provision Success! Mac Device id is Deleted in CUC
-22/05/2018 11:53:02 devpinoyLogger Delete Provision Success! Device profile is Deleted in CUC
-22/05/2018 11:53:51 devpinoyLogger Click on perform
-22/05/2018 11:54:19 devpinoyLogger Mac Device id is matched in CUC
-22/05/2018 11:54:19 devpinoyLogger Device profile is matched in CUC
-22/05/2018 11:54:54 devpinoyLogger Click on  Delete perform
-22/05/2018 11:55:39 devpinoyLogger Delete Provision Success! Mac Device id is Deleted in CUC
-22/05/2018 11:55:59 devpinoyLogger Delete Provision Success! Device profile is Deleted in CUC
-22/05/2018 11:56:45 devpinoyLogger Click on perform
-22/05/2018 11:57:06 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 11:57:42 devpinoyLogger Click on  Delete perform
-22/05/2018 11:58:07 devpinoyLogger Provision Success! Data deleted from CUCM Records find:: 0 records found
-22/05/2018 11:58:49 devpinoyLogger Click on perform
-22/05/2018 11:59:13 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 11:59:50 devpinoyLogger Click on  Delete perform
-22/05/2018 12:00:12 devpinoyLogger Provision Success! Data deleted from CUCM Records find:: 0 records found
-22/05/2018 12:00:44 devpinoyLogger Click on perform
-22/05/2018 12:00:59 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 12:01:01 devpinoyLogger QAUPS
-22/05/2018 12:01:02 devpinoyLogger Provision Success! Records not Match:: 
-22/05/2018 12:01:20 devpinoyLogger Click on  Delete job perform
-22/05/2018 12:01:34 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
-22/05/2018 12:01:47 devpinoyLogger Click on perform
-22/05/2018 12:02:18 devpinoyLogger Click on  Delete job perform
-22/05/2018 12:02:34 devpinoyLogger found expected data, delete job failed to delete data:: 1 records found
-22/05/2018 12:02:54 devpinoyLogger Click on perform
-22/05/2018 12:03:09 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 12:03:15 devpinoyLogger Provision Success! found expected data
-22/05/2018 12:03:15 devpinoyLogger Provision Success! Hunt List Name does not match in callmanager:: 
-22/05/2018 12:03:25 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 12:03:27 devpinoyLogger Provision Success! found expected Line Group Name in Callmanager
-22/05/2018 12:03:29 devpinoyLogger Provision Success!Directory Number does not match in callmanager:: 
-22/05/2018 12:03:44 devpinoyLogger Click on  Delete job perform
-22/05/2018 12:03:59 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
-22/05/2018 12:04:22 devpinoyLogger Click on perform
-22/05/2018 12:04:39 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 12:04:42 devpinoyLogger Provision Success! Self service Id matched in Call manager:: 
-22/05/2018 12:05:05 devpinoyLogger Click on  Delete job perform
-22/05/2018 12:05:29 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 12:05:32 devpinoyLogger  Delete Provision Success! Self service Id not  matched in Call manager:: 
-22/05/2018 12:05:47 devpinoyLogger Click on perform
-22/05/2018 12:06:03 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 12:06:05 devpinoyLogger 18002345998
-22/05/2018 12:06:06 devpinoyLogger 00 Hunt List QA Auto 054
-22/05/2018 12:06:07 devpinoyLogger Provision Success! Records not Match:: 
-22/05/2018 12:06:23 devpinoyLogger Click on  Delete job perform
-22/05/2018 12:06:36 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
-22/05/2018 12:06:50 devpinoyLogger Click on perform
-22/05/2018 12:07:07 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 12:07:09 devpinoyLogger Line Group QA Auto 56
-22/05/2018 12:07:10 devpinoyLogger Provision Success! found expected data
-22/05/2018 12:07:25 devpinoyLogger Click on  Delete job perform
-22/05/2018 12:07:38 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
-22/05/2018 12:07:56 devpinoyLogger Click on perform
-22/05/2018 12:08:16 devpinoyLogger Provision Success! Records find:: 1 records found
-22/05/2018 12:08:20 devpinoyLogger Provision Success! Self service Id matched in Call manager:: 
-22/05/2018 12:08:21 devpinoyLogger Provision Success! First Name matched in Call manager:: 
-22/05/2018 12:08:22 devpinoyLogger Provision Success! Last Name matched in Call manager:: 
-22/05/2018 12:08:23 devpinoyLogger Provision Success! Telephone Number matched in Call manager:: 
-22/05/2018 12:08:46 devpinoyLogger Click on  Delete job perform
-22/05/2018 12:09:13 devpinoyLogger Provision Success!Delete job Failed Records find:: 0 records found
+25/05/2018 13:15:44 devpinoyLogger Config file is loaded!!!
+25/05/2018 13:15:44 devpinoyLogger OR file is loaded!!!
+25/05/2018 13:15:47 devpinoyLogger Chrome launched!!!
+25/05/2018 13:15:48 devpinoyLogger Navigated to : https://192.168.110.213/pme/index.php/user/login
+25/05/2018 13:15:49 devpinoyLogger Login Class Start
+25/05/2018 13:15:49 devpinoyLogger Inside Login Test
+25/05/2018 13:15:51 devpinoyLogger Login Successfully executed
+25/05/2018 13:15:51 devpinoyLogger Login Class Finish
+25/05/2018 13:15:52 devpinoyLogger  Test Class Start:  ProvisionHuntListTest
+25/05/2018 13:15:52 devpinoyLogger  This is the First Test Class in project
+25/05/2018 13:16:13 devpinoyLogger Click on perform
+25/05/2018 13:16:33 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:16:34 devpinoyLogger 00 Hunt List QA Auto 118
+25/05/2018 13:16:35 devpinoyLogger Provision Success! found expected data : Hunt List Name
+25/05/2018 13:16:36 devpinoyLogger Provision Success! found expected data : Line  Group
+25/05/2018 13:16:50 devpinoyLogger Click on  Delete job perform
+25/05/2018 13:17:05 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
+25/05/2018 13:17:05 devpinoyLogger  Test Class Finish:  ProvisionHuntListTest
+25/05/2018 13:17:17 devpinoyLogger Click on perform
+25/05/2018 13:17:31 devpinoyLogger Click on perform
+25/05/2018 13:17:34 devpinoyLogger  Test Class Start:  ProvisionAddExt7970Test
+25/05/2018 13:18:21 devpinoyLogger Click on perform
+25/05/2018 13:18:47 devpinoyLogger Mac Device id is matched in CUC
+25/05/2018 13:18:47 devpinoyLogger Device profile is matched in CUC
+25/05/2018 13:19:23 devpinoyLogger Click on  Delete perform
+25/05/2018 13:20:07 devpinoyLogger Delete Provision Success! Mac Device id is Deleted in CUC
+25/05/2018 13:20:27 devpinoyLogger Delete Provision Success! Device profile is Deleted in CUC
+25/05/2018 13:20:27 devpinoyLogger  Test Class Finish:  ProvisionAddExt7970Test
+25/05/2018 13:20:27 devpinoyLogger  Test Class Start:  ProvisionAddExt8865Test
+25/05/2018 13:21:16 devpinoyLogger Click on perform
+25/05/2018 13:21:45 devpinoyLogger Mac Device id is matched in CUC
+25/05/2018 13:21:45 devpinoyLogger Device profile is matched in CUC
+25/05/2018 13:22:20 devpinoyLogger Click on  Delete perform
+25/05/2018 13:23:06 devpinoyLogger Delete Provision Success! Mac Device id is Deleted in CUC
+25/05/2018 13:23:26 devpinoyLogger Delete Provision Success! Device profile is Deleted in CUC
+25/05/2018 13:23:26 devpinoyLogger  Test Class Finish:  ProvisionAddExt8865Test
+25/05/2018 13:23:26 devpinoyLogger  Test Class Start:  ProvisionAddExt9971Test
+25/05/2018 13:24:16 devpinoyLogger Click on perform
+25/05/2018 13:24:47 devpinoyLogger Mac Device id is matched in CUC
+25/05/2018 13:24:50 devpinoyLogger Device profile is matched in CUC
+25/05/2018 13:25:25 devpinoyLogger Click on  Delete perform
+25/05/2018 13:26:15 devpinoyLogger Delete Provision Success! Mac Device id is Deleted in CUC
+25/05/2018 13:26:35 devpinoyLogger Delete Provision Success! Device profile is Deleted in CUC
+25/05/2018 13:26:35 devpinoyLogger  Test Class Finish:  ProvisionAddExt9971Test
+25/05/2018 13:26:35 devpinoyLogger  Test Class Start:  ProvisionAddExtAnalogTest
+25/05/2018 13:27:18 devpinoyLogger Click on perform
+25/05/2018 13:27:40 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:28:17 devpinoyLogger Click on  Delete perform
+25/05/2018 13:28:42 devpinoyLogger Provision Success! Data deleted from CUCM Records find:: 0 records found
+25/05/2018 13:28:43 devpinoyLogger  Test Class Finish:  ProvisionAddExtAnalogTest
+25/05/2018 13:28:43 devpinoyLogger  Test Class Start:  ProvisionAddExtAndroidTest
+25/05/2018 13:29:25 devpinoyLogger Click on perform
+25/05/2018 13:29:46 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:30:22 devpinoyLogger Click on  Delete perform
+25/05/2018 13:30:43 devpinoyLogger Provision Success! Data deleted from CUCM Records find:: 0 records found
+25/05/2018 13:30:44 devpinoyLogger  Test Class Finish:  ProvisionAddExtAndroidTest
+25/05/2018 13:30:45 devpinoyLogger  Test Class Start:  ProvisionCtiRoutePointsTest
+25/05/2018 13:31:16 devpinoyLogger Click on perform
+25/05/2018 13:31:31 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:31:33 devpinoyLogger QAUPS
+25/05/2018 13:31:34 devpinoyLogger Provision Success! found expected data
+25/05/2018 13:31:53 devpinoyLogger Click on  Delete job perform
+25/05/2018 13:32:07 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
+25/05/2018 13:32:07 devpinoyLogger  Test Class Finish:  ProvisionAddExtCtiRoutePointsTest
+25/05/2018 13:32:07 devpinoyLogger  Test Class Start:  ProvisionLgmTest
+25/05/2018 13:32:18 devpinoyLogger Click on perform
+25/05/2018 13:32:33 devpinoyLogger Click on perform
+25/05/2018 13:32:35 devpinoyLogger  Test Class Start:  ProvisionForwardCallsTest
+25/05/2018 13:32:46 devpinoyLogger Click on perform
+25/05/2018 13:33:01 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:33:03 devpinoyLogger 18002346668
+25/05/2018 13:33:04 devpinoyLogger pass
+25/05/2018 13:33:05 devpinoyLogger Provision Success! Records not Match:: 
+25/05/2018 13:33:20 devpinoyLogger Click on  Delete job perform
+25/05/2018 13:33:36 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
+25/05/2018 13:33:36 devpinoyLogger  Test Class Finish:  ProvisionForwardCallsTest
+25/05/2018 13:33:36 devpinoyLogger  Test Class Start:  ProvisionHuntPilotTest
+25/05/2018 13:33:56 devpinoyLogger Click on perform
+25/05/2018 13:34:12 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:34:17 devpinoyLogger Provision Success! found expected data
+25/05/2018 13:34:18 devpinoyLogger Provision Success! found expected Hunt List Name
+25/05/2018 13:34:28 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:34:31 devpinoyLogger Provision Success! found expected Line Group Name in Callmanager
+25/05/2018 13:34:33 devpinoyLogger Provision Success!Directory Number does not match in callmanager:: 
+25/05/2018 13:34:33 devpinoyLogger  Test Class Finish:  ProvisionHuntPilotTest
+25/05/2018 13:34:48 devpinoyLogger Click on  Delete job perform
+25/05/2018 13:35:05 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
+25/05/2018 13:35:05 devpinoyLogger  Test Class Start:  ProvisionLdapUserTest
+25/05/2018 13:35:28 devpinoyLogger Click on perform
+25/05/2018 13:35:44 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:35:48 devpinoyLogger Provision Success! Self service Id matched in Call manager:: 
+25/05/2018 13:36:12 devpinoyLogger Click on  Delete job perform
+25/05/2018 13:36:37 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:36:40 devpinoyLogger  Delete Provision Success! Self service Id not  matched in Call manager:: 
+25/05/2018 13:36:40 devpinoyLogger  Test Class Finish:  ProvisionLdapUserTest
+25/05/2018 13:36:40 devpinoyLogger  Test Class Start:  ProvisionLgmTest
+25/05/2018 13:36:54 devpinoyLogger Click on perform
+25/05/2018 13:37:12 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:37:13 devpinoyLogger 18002346668
+25/05/2018 13:37:14 devpinoyLogger TestHunt List For Forward
+25/05/2018 13:37:15 devpinoyLogger Provision Success! Records not Match:: 
+25/05/2018 13:37:30 devpinoyLogger Click on  Delete job perform
+25/05/2018 13:37:43 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
+25/05/2018 13:37:43 devpinoyLogger  Test Class Finish:  ProvisionLgmTest
+25/05/2018 13:37:44 devpinoyLogger  Test Class Start:  ProvisionLineGroupTest
+25/05/2018 13:37:57 devpinoyLogger Click on perform
+25/05/2018 13:38:14 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:38:16 devpinoyLogger Line Group QA Auto 224
+25/05/2018 13:38:17 devpinoyLogger Provision Success! found expected data
+25/05/2018 13:38:32 devpinoyLogger Click on  Delete job perform
+25/05/2018 13:38:47 devpinoyLogger  Delete job Provision Success! Records not found :: 0 records found
+25/05/2018 13:38:47 devpinoyLogger  Test Class Finish:  ProvisionLineGroupTest
+25/05/2018 13:38:47 devpinoyLogger  Test Class Start:  ProvisionLocalUserTest
+25/05/2018 13:39:05 devpinoyLogger Click on perform
+25/05/2018 13:39:27 devpinoyLogger Provision Success! Records find:: 1 records found
+25/05/2018 13:39:30 devpinoyLogger Provision Success! Self service Id matched in Call manager:: 
+25/05/2018 13:39:31 devpinoyLogger Provision Success! First Name matched in Call manager:: 
+25/05/2018 13:39:32 devpinoyLogger Provision Success! Last Name matched in Call manager:: 
+25/05/2018 13:39:33 devpinoyLogger Provision Success! Telephone Number matched in Call manager:: 
+25/05/2018 13:39:56 devpinoyLogger Click on  Delete job perform
+25/05/2018 13:40:20 devpinoyLogger Provision Success!Delete job Failed Records find:: 0 records found
+25/05/2018 13:40:20 devpinoyLogger  Test Class Finish:  ProvisionLocalUserTest
+25/05/2018 13:40:21 devpinoyLogger  Test Class Start:  ProvisionLdapVoiceTest
+25/05/2018 13:41:18 devpinoyLogger Click on perform
+25/05/2018 13:41:45 devpinoyLogger Provision Success! Records find::   Found 1 User(s)
+25/05/2018 13:42:10 devpinoyLogger Click on perform delete
+25/05/2018 13:42:29 devpinoyLogger Provision Success! Records Deleted::   Found 0 User(s)
+25/05/2018 13:42:29 devpinoyLogger  Test Class Finish:  ProvisionLdapVoiceTest
+25/05/2018 13:42:30 devpinoyLogger  Test Class Start:  ProvisionLocalVoiceTest
+25/05/2018 13:43:15 devpinoyLogger Click on perform
+25/05/2018 13:43:29 devpinoyLogger Provision Success! Records find::   Found 1 User(s)
+25/05/2018 13:43:55 devpinoyLogger Click on perform delete
+25/05/2018 13:44:14 devpinoyLogger Provision Success! Records Deleted::   Found 0 User(s)
+25/05/2018 13:44:14 devpinoyLogger  Test Class Finish:  ProvisionLocalVoiceTest

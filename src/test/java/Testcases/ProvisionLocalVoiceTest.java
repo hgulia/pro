@@ -86,7 +86,7 @@ public class ProvisionLocalVoiceTest extends TestBase {
 
 		click("performpro");
 
-		System.out.println("Click on perform");
+		log.debug("Click on perform");
 
 		Thread.sleep(2000);
 
@@ -94,7 +94,7 @@ public class ProvisionLocalVoiceTest extends TestBase {
 
 		if (errormsgdisplay == true) {
 
-			System.out.println("Provision Failed");
+			log.debug("Provision Failed");
 		}
 
 		else if (errormsgdisplay == false) {
@@ -140,13 +140,13 @@ public class ProvisionLocalVoiceTest extends TestBase {
 
 			if (status.equals(expected)) {
 
-				System.out.println("Provision Success! Records find:: " + status);
+				log.debug("Provision Success! Records find:: " + status);
 
 			}
 
 			else {
 
-				System.out.println("Provision Failed! Records not  found:: " + status);
+				log.debug("Provision Failed! Records not  found:: " + status);
 
 			}
 		}
@@ -193,7 +193,7 @@ public class ProvisionLocalVoiceTest extends TestBase {
 
 		click("performpro");
 
-		System.out.println("Click on perform delete");
+		log.debug("Click on perform delete");
 
 		Thread.sleep(4000);
 
@@ -201,7 +201,7 @@ public class ProvisionLocalVoiceTest extends TestBase {
 
 		if (errormsgdisplay == true) {
 
-			System.out.println("Provision Failed");
+			log.debug("Provision Failed");
 		}
 
 		else if (errormsgdisplay == false) {
@@ -249,13 +249,13 @@ public class ProvisionLocalVoiceTest extends TestBase {
 
 			if (status.equals(expected)) {
 
-				System.out.println("Provision Success! Records Deleted:: " + status);
+				log.debug("Provision Success! Records Deleted:: " + status);
 
 			}
 
 			else {
 
-				System.out.println("Provision Failed! Records find:: " + status);
+				log.debug("Provision Failed! Records find:: " + status);
 
 			}
 		}

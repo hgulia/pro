@@ -4,14 +4,14 @@ public class TestConfig{
 
 	
 	public static String server="smtp.gmail.com";
-	public static String from = "vaffaproject@gmail.com";
-	public static String password = "Selenium@123";
-	public static String[] to ={"seleniumcoaching@gmail.com","hgulia@akkadianlabs.com"};
-	public static String subject = "Extent Project Report";
+	public static String from = "hgulia@akkadianlabs.com";
+	public static String password = "Manu$1980";
+	public static String[] to ={"hgulia@akkadianlabs.com","Kchan@akkadianlabs.com"};
+	public static String subject = "Extent Project Report for Provision ";
 	
-	public static String messageBody ="TestMessage";
-	public static String attachmentPath="c:\\screenshot\\2017_10_3_14_49_9.jpg";
-	public static String attachmentName="error.jpg";
+	public static String messageBody ="PME Provision Report QA Automation, Click on Extent Report.";
+	public static String attachmentPath="C:/Users/hgulia/git/Pro/PmeProvisionJobs/target/surefire-reports/html/extent.html";
+	public static String attachmentName="Extent Report";
 	
 	
 	

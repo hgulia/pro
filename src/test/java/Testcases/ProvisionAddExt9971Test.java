@@ -2,6 +2,7 @@ package Testcases;
 
 import java.io.IOException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -19,7 +20,7 @@ public class ProvisionAddExt9971Test extends TestBase {
 	@Test(priority = 1)
 	public void mainPageOpenAddExt9971() throws InterruptedException {
 		log.debug(" Test Class Start:  ProvisionAddExt9971Test");
-		
+
 		driver.get("https://192.168.110.213/pme/index.php/");
 
 		Thread.sleep(1000);
@@ -68,20 +69,19 @@ public class ProvisionAddExt9971Test extends TestBase {
 
 		type("9971deviceprofile", "7901profile");
 
+		Thread.sleep(5000);
+
+		WebElement generate = driver.findElement(By.xpath(OR.getProperty("9971generatecode")));
+
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", generate);
+
 		Thread.sleep(3000);
-
-		WebElement element = waitExplicit
-				.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("9971generatecode"))));
-
-		element.click();
-		// click("9971generatecode");
-
-		Thread.sleep(4000);
 
 		macid = driver.findElement(By.xpath(OR.getProperty("9971storecode"))).getAttribute("value");
 
 		Thread.sleep(8000);
-
+		System.out.println("9971" +macid);
 		WebElement optionperformadd = (driver.findElement(By.xpath(OR.getProperty("performpro"))));
 
 		action.moveToElement(optionperformadd);
@@ -123,7 +123,7 @@ public class ProvisionAddExt9971Test extends TestBase {
 
 			action.moveToElement(enduser).click().perform();
 
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 
 			Select selectuserid = new Select(driver.findElement(By.xpath(OR.getProperty("ciscoselectbyid"))));
 
@@ -158,7 +158,7 @@ public class ProvisionAddExt9971Test extends TestBase {
 
 				click("ciscofindenduser");
 
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 
 				Select selectdevice = new Select(driver.findElement(By.xpath(OR.getProperty("ciscodevice9971"))));
 
@@ -168,7 +168,7 @@ public class ProvisionAddExt9971Test extends TestBase {
 
 				String devicecuc = option.getText();
 
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 
 				if (devicecuc.equals(macid)) {
 
@@ -181,6 +181,7 @@ public class ProvisionAddExt9971Test extends TestBase {
 					log.debug("Mac Device id is not matched in CUC");
 				}
 
+				Thread.sleep(3000);
 				Select selectpro = new Select(driver.findElement(By.xpath(OR.getProperty("ciscoprofile9971"))));
 
 				selectpro.selectByVisibleText("7901profile");
@@ -320,7 +321,7 @@ public class ProvisionAddExt9971Test extends TestBase {
 			if (status.equals(expected)) {
 
 				click("ciscofindenduser");
-
+				Thread.sleep(3000);
 				Select selectdevice = new Select(driver.findElement(By.xpath(OR.getProperty("ciscodevice9971"))));
 				try {
 
@@ -330,7 +331,7 @@ public class ProvisionAddExt9971Test extends TestBase {
 
 					String devicecuc = option.getText();
 
-					Thread.sleep(1000);
+					Thread.sleep(3000);
 
 					if (devicecuc.equals(macid)) {
 

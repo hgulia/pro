@@ -2,6 +2,7 @@ package Testcases;
 
 import java.io.IOException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -67,20 +68,20 @@ public class ProvisionAddExt8865Test extends TestBase {
 
 		type("8865deviceprofile", "7987profile");
 
+		Thread.sleep(5000);
+
+		WebElement generate = driver.findElement(By.xpath(OR.getProperty("8865generatecode")));
+
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", generate);
+
 		Thread.sleep(3000);
-
-		WebElement element = waitExplicit
-				.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("8865generatecode"))));
-
-		element.click();
-		
-		// click("8865generatecode");
-
-		Thread.sleep(4000);
 
 		macid = driver.findElement(By.xpath(OR.getProperty("8865storecode"))).getAttribute("value");
 
 		Thread.sleep(8000);
+
+		System.out.println("8861"+macid);
 
 		WebElement optionperformadd = (driver.findElement(By.xpath(OR.getProperty("performpro"))));
 
@@ -90,9 +91,9 @@ public class ProvisionAddExt8865Test extends TestBase {
 
 		Thread.sleep(1000);
 
-		WebElement optionperformaddagain = (driver.findElement(By.xpath(OR.getProperty("performpro"))));
+		WebElement optionperformaddtry = (driver.findElement(By.xpath(OR.getProperty("performpro"))));
 
-		action.moveToElement(optionperformaddagain);
+		action.moveToElement(optionperformaddtry);
 		action.click().sendKeys(Keys.ENTER);
 		action.build().perform();
 
@@ -158,7 +159,7 @@ public class ProvisionAddExt8865Test extends TestBase {
 
 				click("ciscofindenduser");
 
-				Thread.sleep(1000);
+				Thread.sleep(3000);
 
 				Select selectdevice = new Select(driver.findElement(By.xpath(OR.getProperty("ciscodevice8865"))));
 

@@ -88,13 +88,13 @@ public class ProvisionLocalUserTest extends TestBase {
 
 			action.moveToElement(enduser).click().perform();
 
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 
 			Select selectuserid = new Select(driver.findElement(By.xpath(OR.getProperty("ciscoselectbyid"))));
 
 			selectuserid.selectByValue("userid");
 
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 
 			Select select = new Select(driver.findElement(By.xpath(OR.getProperty("ciscofindexact"))));
 
@@ -234,7 +234,7 @@ public class ProvisionLocalUserTest extends TestBase {
 
 		Thread.sleep(2000);
 
-		driver.findElement(By.xpath(OR.getProperty("snrinputuser"))).sendKeys("Hitender");
+		driver.findElement(By.xpath(OR.getProperty("snrinputuser"))).sendKeys("hgulia");
 
 		Thread.sleep(2000);
 		WebElement user = driver.findElement(By.xpath(OR.getProperty("snrinputuser")));

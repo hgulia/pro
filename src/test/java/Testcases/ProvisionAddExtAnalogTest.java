@@ -69,7 +69,7 @@ public class ProvisionAddExtAnalogTest extends TestBase {
 		Thread.sleep(6000);
 
 		devicename = driver.findElement(By.xpath(OR.getProperty("analogstorename"))).getAttribute("value");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		WebElement optionperformadd = (driver.findElement(By.xpath(OR.getProperty("performpro"))));
 
@@ -77,13 +77,6 @@ public class ProvisionAddExtAnalogTest extends TestBase {
 		action.click().sendKeys(Keys.ENTER);
 		action.build().perform();
 
-		Thread.sleep(1000);
-
-		WebElement optionperformaddagain = (driver.findElement(By.xpath(OR.getProperty("performpro"))));
-
-		action.moveToElement(optionperformaddagain);
-		action.click().sendKeys(Keys.ENTER);
-		action.build().perform();
 
 		log.debug("Click on perform");
 

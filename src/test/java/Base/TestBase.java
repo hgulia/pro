@@ -7,6 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,6 +41,7 @@ public class TestBase {
 	public static WebDriverWait waitExplicit;
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
+	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	@BeforeSuite
 	public void setUp() {
@@ -109,6 +111,33 @@ public class TestBase {
 			waitExplicit = new WebDriverWait(driver, 30);
 		}
 
+	}
+
+	public void jsclick(String locator) {
+
+		test.log(LogStatus.INFO, "Clicking on : " + locator);
+
+		// js.executeScript("document.getElementByXpath(OR.getProperty(locator)).click();");
+
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();",
+				driver.findElement(By.xpath(OR.getProperty(locator))));
+
+	}
+
+	public void jstype(String locator, String value) {
+
+		((JavascriptExecutor) driver).executeScript("document.getElementById(\"email\").value=\"testhgjfjhfgdjfh\"");
+		((JavascriptExecutor) driver).executeScript("arguments[0].;",
+				driver.findElement(By.xpath(OR.getProperty(locator))));
+
+		js.executeScript("document.getElementById('some id').value='someValue';");
+		js.executeScript("document.getElementById('Email').value='SoftwareTestingMaterial.com';");
+
+		js.executeScript("document.getElementByXpath('xpath').value='someValue';");
+
+		driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
+
+		test.log(LogStatus.INFO, "Typing in : " + locator + "Entered Value as " + value);
 	}
 
 	public void click(String locator) {

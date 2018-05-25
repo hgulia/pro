@@ -20,6 +20,18 @@
 			<class name="Testcases.ProvisionHuntListTest" />
 		</classes>
 	</test> <!-- Test -->
+	
+	<test name=" Provision Jobs Hunt List More Test">
+		<classes>
+			<class name="Testcases.ProvisionCreateHuntListMoreTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name=" Provision Jobs Hunt List More Again Test">
+		<classes>
+			<class name="Testcases.ProvisionCreateHuntListMoreAgainTest" />
+		</classes>
+	</test> <!-- Test -->
 
 
 	<test name=" Provision Jobs Add Ext 7970 Test">
@@ -61,6 +73,17 @@
 		</classes>
 	</test> <!-- Test -->
 
+	<test name=" Provision Jobs Create Hunt List Test">
+		<classes>
+			<class name="Testcases.ProvisionCreateHuntListTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name=" Provision Jobs Create Hunt List Again Test">
+		<classes>
+			<class name="Testcases.ProvisionCreateHuntListAgainTest" />
+		</classes>
+	</test> <!-- Test -->
 
 	<test name=" Provision Jobs Forward Calls Test">
 		<classes>
@@ -115,8 +138,6 @@
 			<class name="Testcases.ProvisionLocalVoiceTest" />
 		</classes>
 	</test> <!-- Test -->
-
-
 
 </suite> <!-- Suite -->
 

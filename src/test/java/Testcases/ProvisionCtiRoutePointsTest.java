@@ -19,7 +19,7 @@ public class ProvisionCtiRoutePointsTest extends TestBase {
 		log.debug(" Test Class Start:  ProvisionCtiRoutePointsTest");
 		driver.get("https://192.168.110.213/pme/index.php/");
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 		click("actactions");
 
@@ -157,15 +157,21 @@ public class ProvisionCtiRoutePointsTest extends TestBase {
 
 				Thread.sleep(1000);
 
-				if (dirNumber.equals("qaups")) {
+				if (dirNumber.equals("QAUPS")) {
 
 					log.debug("Provision Success! found expected data");
 
 				} else {
-					log.debug("Provision Success! Records not Match:: ");
+					log.debug("Provision Success! Records not Match ");
 				}
 			}
 
+			
+			else {
+				
+				log.debug("Provision Failed! Records not find:: " + status);
+
+			}
 		}
 	}
 
